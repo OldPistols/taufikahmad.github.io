@@ -269,6 +269,19 @@ export default function About() {
                     <Text variant="heading-default-xs" onBackground="neutral-weak">
                       {institution.description}
                     </Text>
+                    {institution.achievements && institution.achievements.length > 0 && (  
+                      <Column as="ul" gap="16" marginTop="m">  
+                        {institution.achievements.map((achievement, index) => (  
+                          <Text  
+                            as="li"  
+                            variant="body-default-m"  
+                            key={`${institution.name}-achievement-${index}`}>  
+                            {achievement}  
+                          </Text>  
+                        ))}     
+                      </Column>  
+                  )}
+                    
                   </Column>
                 ))}
               </Column>

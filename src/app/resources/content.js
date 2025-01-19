@@ -1,19 +1,19 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Taufik",
+  lastName: "Ahmad",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "System Analyst",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "Asia/Kuala_Lumpur", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -29,12 +29,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/OldPistols",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/taufikahmad07",
   },
   {
     name: "X",
@@ -44,7 +44,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:taufikmastar1995@gmail.com",
   },
 ];
 
@@ -52,11 +52,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>System Analyst</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Taufik, a System Analyst at <InlineCode>ANALOG DEVICES</InlineCode>, where I analyze systems and design efficient solutions.
+      <br /> After hours, I build my own projects.
     </>
   ),
 };
@@ -81,9 +81,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        As a system analyst, I'm passionate in deciphering intricate systems 
+        and creating scalable, effective solutions. System design, process optimization, 
+        and the smooth integration of technology to satisfy business objectives are all areas in which I specialize.
       </>
     ),
   },
@@ -92,20 +92,43 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
+        company: "Analog Devices",
         timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        role: "System Analyst/Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Develop user manuals for system operation and troubleshooting.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Analyze system failures and identify root causes to implement corrective actions.
+          </>,
+          <>
+            Design and develop new systems to meet specific business requirements and 
+            improve efficiency.
+          </>,
+          <>
+            Analyze current systems to identify strengths and weaknesses.
+          </>,
+          <>
+            Gather requirements from stakeholders for system enhancements.
+          </>,
+          <>
+            Design comprehensive system solutions, including data models and architecture.
+          </>,
+          <>
+            Collaborate with development teams to ensure solutions meet requirements.
+          </>,
+          <>
+            Oversee testing to ensure quality and functionality.
+          </>,
+          <>
+            Coordinate system deployment and provide user training.
+          </>,
+          <>
+            Maintain thorough documentation for future reference.
           </>,
         ],
-        images: [
+        images: [/*
           // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
@@ -113,21 +136,41 @@ const about = {
             width: 16,
             height: 9,
           },
-        ],
+        */],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Analog Devices",
+        timeframe: "2017 - 2022",
+        role: "Manufacturing Speciacalist",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Calibrated, tested, and adjusted machines before production.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Operated machinery and ensured high-quality output.
           </>,
+          <>
+            Inspected equipment and performed preventive maintenance.
+          </>,
+          <>
+            Loaded raw materials and unloaded finished products.
+          </>,
+          <>
+            Ensured adherence to product quality standards.
+          </>,
+          <>
+            Managed multiple machines to meet production targets.
+          </>,
+          <>
+            Resolved machine jams and adjusted settings.
+          </>,
+          <>
+            Maintained production and performance records.
+          </>,
+          <>
+            Configured machine settings based on work orders.
+          </>,
+    
         ],
         images: [],
       },
@@ -138,32 +181,39 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "University Teknologi Malaysia",
+        description: <>Part-time bachelor in computer science software engineering with honour.</>,
+        achievements: [<>Awarded dean list in 4 semester continuously</>],
+      },
+      {
+        name: "University of Selangor",
+        description: <>Full-time diploma in multimedia industry.</>,
       },
       {
         name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        description: <>Studied web-based application development</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Hard & Soft skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "System Analysis and Design",
+        description: <>Understanding system development lifecycles (SDLC), 
+        creating workflows, data flow diagrams (DFDs), and modeling tools 
+        like UML.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/projects/project-01/DFD.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/project-01/UML.jpeg",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -171,24 +221,78 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Technical Documentation & Reporting",
+        description: <>Writing detailed requirement specifications, 
+        designing system architecture, and preparing technical reports 
+        for stakeholders.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/projects/project-01/TechnicalDocument.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
         ],
+      },
+      {
+        title: "Data Analysis & Visualization",
+        description: <>Using tools like Excel, Tableau, or Power BI for 
+        data insights and decision-making.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/power-bi-dashboard.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "User Acceptance Testing(UAT)",
+        description: <>Designing test cases, conducting system testing, 
+        identifying bugs, and recommending solutions.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/uat-test-results.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Problem-Solving Skills",
+        description: <>Resolving conflicts between user needs, technical 
+        constraints, and system limitations.</>,
+      },
+      {
+        title: "Collaboration and Teamwork",
+        description: <>Working with cross-functional teams, such as 
+        developers, QA testers, business stakeholders, and vendors.</>,
+      },
+      {
+        title: "Critical Thinking",
+        description: <>Evaluating the tradeoffs between different system 
+        options and anticipating future requirements.</>,
+      },
+      {
+        title: "Conflict Resolution",
+        description: <>Resolving disagreements related to system functionalities and requirements.</>,
+      },
+      {
+        title: "Adaptability",
+        description: <>Quickly adapting to new technologies, processes, 
+        and organizational changes.</>,
       },
     ],
   },
 };
 
 const blog = {
-  label: "Blog",
+  label: "Reflections",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
@@ -196,7 +300,7 @@ const blog = {
 };
 
 const work = {
-  label: "Work",
+  label: "Assignments",
   title: "My projects",
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
@@ -282,4 +386,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work };
