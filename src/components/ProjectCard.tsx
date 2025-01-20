@@ -19,6 +19,7 @@ interface ProjectCardProps {
   description: string;
   avatars: { src: string }[];
   link: string;
+  link2: string;
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -29,7 +30,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   avatars,
   link,
+  link2,
 }) => {
+  console.log('Link 2:', link2); // Debug if link2 is being passed 
   return (
     <Column fillWidth gap="m">
       <Carousel
@@ -78,7 +81,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                   style={{ margin: "0", width: "fit-content" }}
                   href={link}
                 >
-                  <Text variant="body-default-s">View project</Text>
+                  <Text variant="body-default-s">View assignment 1</Text>
+                </SmartLink>
+              )}
+              {link2 && (
+                <SmartLink
+                  suffixIcon="arrowUpRightFromSquare"
+                  style={{ margin: "0", width: "fit-content" }}
+                  href={link}
+                >
+                  <Text variant="body-default-s">View assignment 3</Text>
                 </SmartLink>
               )}
             </Flex>
